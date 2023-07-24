@@ -1,3 +1,11 @@
+/*
+ * @Author: boboan 360969885@qq.com
+ * @Date: 2023-07-24 11:40:58
+ * @LastEditors: boboan 360969885@qq.com
+ * @LastEditTime: 2023-07-24 23:27:47
+ * @FilePath: /taro-template/config/prod.js
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 module.exports = {
   env: {
     NODE_ENV: '"production"'
@@ -5,6 +13,9 @@ module.exports = {
   defineConstants: {
   },
   mini: {},
+  terser:{
+
+  },
   h5: {
     /**
      * WebpackChain 插件配置
