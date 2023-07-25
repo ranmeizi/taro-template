@@ -8,7 +8,7 @@ definePageConfig({});
 
 export default function () {
   return (
-    <Page pageId="PAGE_ID" tabView>
+    <Page pageId={PAGE_ID} tabView>
       我的
       <CustomTabbar />
     </Page>

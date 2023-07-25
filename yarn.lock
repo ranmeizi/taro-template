@@ -11986,6 +11986,11 @@ uglify-js@^3.5.1:
   resolved "https://registry.npmmirror.com/uglify-js/-/uglify-js-3.17.4.tgz#61678cf5fa3f5b7eb789bb345df29afb8257c22c"
   integrity sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==
 
+umtrack-wx@^2.8.0:
+  version "2.8.0"
+  resolved "https://registry.npmmirror.com/umtrack-wx/-/umtrack-wx-2.8.0.tgz#df75b6ff002c2f0a4c3b33035496f518777a62f5"
+  integrity sha512-F5ul+Q7bDJ6MDrn9ysPAyB9nyP1vCxLGUBkSJ4uvknt8rjmX4tqy1IUnJuWKj9ZH2BtkjRFpldQXJSlLDOYfhQ==
+
 unbox-primitive@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmmirror.com/unbox-primitive/-/unbox-primitive-1.0.2.tgz#29032021057d5e6cdbd08c5129c226dff8ed6f9e"
