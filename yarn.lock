@@ -1148,7 +1148,7 @@
     core-js-pure "^3.30.2"
     regenerator-runtime "^0.13.11"
 
-"@babel/runtime@^7.12.1", "@babel/runtime@^7.14.5", "@babel/runtime@^7.15.4", "@babel/runtime@^7.7.6", "@babel/runtime@^7.7.7", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.10.0", "@babel/runtime@^7.12.1", "@babel/runtime@^7.14.5", "@babel/runtime@^7.15.4", "@babel/runtime@^7.7.6", "@babel/runtime@^7.7.7", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   version "7.22.6"
   resolved "https://registry.npmmirror.com/@babel/runtime/-/runtime-7.22.6.tgz#57d64b9ae3cff1d67eb067ae117dac087f5bd438"
   integrity sha512-wDb5pWm4WDdF6LFUde3Jl8WzPA+3ZbxYqkC6xAXuD3irdEHN1k0NfTRrJD8ZD378SJ61miMLCqIOXYhd8x+AJQ==
@@ -1537,24 +1537,24 @@
     "@tarojs/runtime" "3.6.7"
     "@tarojs/shared" "3.6.7"
 
-"@tarojs/api@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/api/-/api-3.6.8.tgz#f1886814febebbf4f35f379294dc3f5f5a231b0e"
-  integrity sha512-j5bZ9MFbq+TSnV25OSB+ErYLpx9DEN6ptz3uh6fm/O3c1HLGAIqGSDb2GKdx9CFs5FhiIOuw9XWqgAnDXbkqbQ==
+"@tarojs/api@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/api/-/api-3.6.9-alpha.6.tgz#07c26ddb4f2c3b727c02c5aa0a3c04a7238697bc"
+  integrity sha512-BTpBMQ1PXhP//MkN/nuVLzFLBKD2Bb6GY2Su6n26KWOZkBaiEcZz8Xjn2dsFjlUro/BssEeig5G0a/SNLagMWw==
   dependencies:
     "@babel/runtime" "^7.14.5"
-    "@tarojs/runtime" "3.6.8"
-    "@tarojs/shared" "3.6.8"
+    "@tarojs/runtime" "3.6.9-alpha.6"
+    "@tarojs/shared" "3.6.9-alpha.6"
 
-"@tarojs/cli@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/cli/-/cli-3.6.8.tgz#60f6df340c46ce38761e4c698d3ef58bc51fc194"
-  integrity sha512-OsQj830vOf32ovkqmV8uJxGHpqBr6iB6ZCZp6JDcz2CYrvvT5+HUeuzSnjFQI1vBw3XNaNhYN73cAXsYobMglQ==
+"@tarojs/cli@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/cli/-/cli-3.6.9-alpha.6.tgz#b1eb137bbf7db6c7545d508c93fb5aeefa874597"
+  integrity sha512-p+3hXRy6OungpGvQlC/46tdDKHQ5j3gM6OgQwjaAUWyHb4HGCt9oiDoPYTgCl4U6pjYZOomHRPIIy5vtBdeCgw==
   dependencies:
-    "@tarojs/helper" "3.6.8"
-    "@tarojs/plugin-doctor" "0.0.5"
-    "@tarojs/service" "3.6.8"
-    "@tarojs/shared" "3.6.8"
+    "@tarojs/helper" "3.6.9-alpha.6"
+    "@tarojs/plugin-doctor" "0.0.10"
+    "@tarojs/service" "3.6.9-alpha.6"
+    "@tarojs/shared" "3.6.9-alpha.6"
     adm-zip "^0.4.13"
     cli-highlight "^2.1.11"
     dotenv "^16.0.3"
@@ -1577,41 +1577,41 @@
     validate-npm-package-name "^5.0.0"
     xml2js "^0.5.0"
 
-"@tarojs/components-advanced@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/components-advanced/-/components-advanced-3.6.8.tgz#1dcd261923bbd61791f0546df97ac90b63064793"
-  integrity sha512-4qeU8Cnv2B8HuFH5wFisJHhJqlzR7KsCMPwNmI1zaJOTjdGzrZLe2ObDQSSlJv+FAjVAiqTeGz3Af1P6AnJOcA==
+"@tarojs/components-advanced@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/components-advanced/-/components-advanced-3.6.9-alpha.6.tgz#27bd1f71aea7082e13977e83705907b2b4d3148d"
+  integrity sha512-5TUHrtIRU0Gaz+yuu43y8Xe1d4wGaKlFtqxK1MVlW4y9OPuCbaSYgWrPRWQy3xVQnhDwKkP52nCp2mcUxwpoWw==
   dependencies:
-    "@tarojs/components" "3.6.8"
-    "@tarojs/runtime" "3.6.8"
-    "@tarojs/shared" "3.6.8"
-    "@tarojs/taro" "3.6.8"
+    "@tarojs/components" "3.6.9-alpha.6"
+    "@tarojs/runtime" "3.6.9-alpha.6"
+    "@tarojs/shared" "3.6.9-alpha.6"
+    "@tarojs/taro" "3.6.9-alpha.6"
     memoize-one "^6.0.0"
     postcss "^8.4.18"
 
-"@tarojs/components-react@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/components-react/-/components-react-3.6.8.tgz#4d54b9db0ad8305bc227b2d1ca5af3df533b7907"
-  integrity sha512-IVbT4kCvgHX4iDu8ErRq1vCSSxD0Fpd1KYfMV7UX98MuFweHdr/Ms/LC0uzKOWtdYNat59WZyOHukhl0xZ5vCQ==
+"@tarojs/components-react@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/components-react/-/components-react-3.6.9-alpha.6.tgz#657c6188d2a61742be2d7f34c0a19851e610654f"
+  integrity sha512-wj400s7NLO6qcooyQno/AUB3YNE0NdSxHo/eHd/nd+9szS0F16zMCq4XPBlh5sn5k+QwOfSFskDUhmW2eUlK5Q==
   dependencies:
     "@babel/runtime" "^7.14.5"
-    "@tarojs/components" "3.6.8"
-    "@tarojs/taro" "3.6.8"
+    "@tarojs/components" "3.6.9-alpha.6"
+    "@tarojs/taro" "3.6.9-alpha.6"
     classnames "^2.2.5"
     intersection-observer "^0.7.0"
     resolve-pathname "^3.0.0"
     swiper "6.8.0"
     weui "^1.1.2"
 
-"@tarojs/components@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/components/-/components-3.6.8.tgz#18cb858dc3e253ad71b2f4ccef4d9ae2471ec5ea"
-  integrity sha512-Gd1XypTvsxuXV3nJ0a1ljCayw4rPnsF0253ANPXvUj/QzDlgse3nfq1cL6HZMV/EhxpN7K/qZukTouK0ED92Ow==
+"@tarojs/components@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/components/-/components-3.6.9-alpha.6.tgz#89c578d0549f4edc6bf2f729d0d5e711a45b7e10"
+  integrity sha512-WGY2ixg5TMZ4e75h34MGH54FNDGfYw82v87LLe9QQuAKIYMfwOW99epRuk8qcyHRUONNj4OOn/4NiO2oo0vEBQ==
   dependencies:
     "@stencil/core" "^2.22.2"
-    "@tarojs/components-advanced" "3.6.8"
-    "@tarojs/router" "3.6.8"
-    "@tarojs/taro" "3.6.8"
+    "@tarojs/components-advanced" "3.6.9-alpha.6"
+    "@tarojs/router" "3.6.9-alpha.6"
+    "@tarojs/taro" "3.6.9-alpha.6"
     classnames "^2.2.5"
     hls.js "^1.1.5"
     intersection-observer "^0.7.0"
@@ -1650,10 +1650,10 @@
     supports-hyperlinks "^2.2.0"
     yauzl "2.10.0"
 
-"@tarojs/helper@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/helper/-/helper-3.6.8.tgz#0fd6b98957ec118ee437087ef04c4c9672079aa3"
-  integrity sha512-G6BEk07tFj++Ie4tlEXAPBQjlpjv/WJIji68sqen/fz8yVBQQ7zen5yG20xLGbGFKq3ipj+0StOLaZQywHaQGw==
+"@tarojs/helper@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/helper/-/helper-3.6.9-alpha.6.tgz#ec132a1a37a81960467e11c1da37e47aecc34b93"
+  integrity sha512-8NAQATSXW3xLl8IT2mHgb2YIsv8iSAtqgQHYVU6vGMniwksI29ODXY61ArBQhSTAGLSy4yKcRsSevcC+sFJuUQ==
   dependencies:
     "@babel/core" "^7.14.5"
     "@babel/parser" "^7.14.5"
@@ -1681,174 +1681,192 @@
     supports-hyperlinks "^2.2.0"
     yauzl "2.10.0"
 
-"@tarojs/plugin-doctor-darwin-arm64@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.npmmirror.com/@tarojs/plugin-doctor-darwin-arm64/-/plugin-doctor-darwin-arm64-0.0.5.tgz#f7e69c097f279216b1ec4fbb56bf9048571c717d"
-  integrity sha512-NN9TDMFziQscgu5ASocGhI9A9a00EjICvyzRu2YKhlFMkjs7JLBxsOXYs2WqCeZS8blyciuiW0iraWWTQ/trrw==
+"@tarojs/plugin-doctor-darwin-arm64@0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmmirror.com/@tarojs/plugin-doctor-darwin-arm64/-/plugin-doctor-darwin-arm64-0.0.10.tgz#007ee94dca9f184f17e3549763c4c12f1225a668"
+  integrity sha512-kEInQk4L4R1RqPiGrE4oQInf247pRq/cmi8X3ciKRTSiIQV78s5ACXFhxCdtTKvXcUKnZA3tUQjkyQtbwlo16A==
 
-"@tarojs/plugin-doctor-darwin-x64@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.npmmirror.com/@tarojs/plugin-doctor-darwin-x64/-/plugin-doctor-darwin-x64-0.0.5.tgz#3668e18a77159e5d96a61283f881042c7e8f8890"
-  integrity sha512-5oUezm/kms817P1x8Pp4rlgGANmWqA017JqFgcgrpqb0a6vCmR9p7pVM+dTYmLrDKDSLYHP1nXTybYfTn3aUSg==
+"@tarojs/plugin-doctor-darwin-universal@0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmmirror.com/@tarojs/plugin-doctor-darwin-universal/-/plugin-doctor-darwin-universal-0.0.10.tgz#35da8ca483e7141945ed7f5fc7aae50b6f0fcae0"
+  integrity sha512-1SPez0E/3OGnravV9GgZGI4BTSro4sVf7hJvTxjavStpQ0eiNJA3LZcFYtfuwrc3mrNEpDsZycpA8kZmDjatig==
 
-"@tarojs/plugin-doctor-linux-arm64-gnu@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.npmmirror.com/@tarojs/plugin-doctor-linux-arm64-gnu/-/plugin-doctor-linux-arm64-gnu-0.0.5.tgz#14c48f4ffac0d47e3a795e181bc32193e63d7ba9"
-  integrity sha512-zowoWO2B6Y+Ew3i12TUOwiVwPDRmZmi4wOMbEl2HUocxR4HrP8bb7jnqmGKxIBX2xAazCzMrFQImQJryC1sPrA==
+"@tarojs/plugin-doctor-darwin-x64@0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmmirror.com/@tarojs/plugin-doctor-darwin-x64/-/plugin-doctor-darwin-x64-0.0.10.tgz#87adb526df3322c14ea1bfe7057c830f9061f9f5"
+  integrity sha512-PFXHSCrwcI7c8/kRdSW4o3IK3pw3nrTGs3D69LLdG8a0s7+KbsTAwxnG0KyTXtNzzAZ4g52jNKC81iv9wbTTpA==
 
-"@tarojs/plugin-doctor-linux-arm64-musl@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.npmmirror.com/@tarojs/plugin-doctor-linux-arm64-musl/-/plugin-doctor-linux-arm64-musl-0.0.5.tgz#a3b000e3ea1cbf4fd35ebaeb9ba9d013f2d370de"
-  integrity sha512-ln/6fDVTwwI/nF70HA45zoVnEzHoeFi9HhI8J0T1iRZxZbl0UaK9HY7sa80VUO8J7PBPJmuzys/yuqTG9mbpIQ==
+"@tarojs/plugin-doctor-freebsd-x64@0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmmirror.com/@tarojs/plugin-doctor-freebsd-x64/-/plugin-doctor-freebsd-x64-0.0.10.tgz#34791f69242706016d3d6a64c86b9885c4350b8f"
+  integrity sha512-Zqo30nxMnhQU7n09hsD/I/3Th4w6NAkqLC+TI1ZDbn7gMDCgGkUyE2/ymYveImKYhNE8wQKCpxN6zV1+3JLBnA==
 
-"@tarojs/plugin-doctor-linux-x64-gnu@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.npmmirror.com/@tarojs/plugin-doctor-linux-x64-gnu/-/plugin-doctor-linux-x64-gnu-0.0.5.tgz#21db9b8d4eee33675b9eb2292b327c68ec7b9986"
-  integrity sha512-hOm7GSyXReUeTHFuru31VpgFgqi4570AoB1L5d9UX9nK9OrhhjAjUKFiIMszWaTK18AXYeTcrYwt9xJwnQVmYA==
+"@tarojs/plugin-doctor-linux-arm-gnueabihf@0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmmirror.com/@tarojs/plugin-doctor-linux-arm-gnueabihf/-/plugin-doctor-linux-arm-gnueabihf-0.0.10.tgz#7d8ac5884b4f617375ed86ce1582995e99dedabc"
+  integrity sha512-KvZD6TEYxquA9+AyUKWd4O9wS38NzSJgId2hteT7rcdh5XCe2dy66bQgtOq0iCiIOV2LxKHN/JbuhoZf6XThJw==
 
-"@tarojs/plugin-doctor-win32-arm64-msvc@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.npmmirror.com/@tarojs/plugin-doctor-win32-arm64-msvc/-/plugin-doctor-win32-arm64-msvc-0.0.5.tgz#bdbd5f819c7518888f6160b616d0313d824532c6"
-  integrity sha512-VE4dV/j1wxg79EJN12aZipZB8fVAzZW2+2xvfZA+RCuNA3KeS7xONdny1tmR2Vp1bmFTQm9mM3TH0NfiDpivPA==
+"@tarojs/plugin-doctor-linux-arm64-gnu@0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmmirror.com/@tarojs/plugin-doctor-linux-arm64-gnu/-/plugin-doctor-linux-arm64-gnu-0.0.10.tgz#73f3a1bc84666b93de186dd62633ddb5f470923b"
+  integrity sha512-hSb4zxrgPmXW643ZiDiFXRkARvfOKO91+2rCGT1IwTqGfUdgxzo8NTepkj08WSQv0HizyD7XYKsToM1WmqTrdA==
 
-"@tarojs/plugin-doctor-win32-ia32-msvc@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.npmmirror.com/@tarojs/plugin-doctor-win32-ia32-msvc/-/plugin-doctor-win32-ia32-msvc-0.0.5.tgz#042eff75bbec36f399fb3bf573e507271dcbf3ac"
-  integrity sha512-bZefFxtrIyali+HoIiA6pep3uhCb31PjKSyUceGhRkOI3p5aq3GFYuDwBTvorm2/fSJeuSLYpdFtbHMUJWp09A==
+"@tarojs/plugin-doctor-linux-arm64-musl@0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmmirror.com/@tarojs/plugin-doctor-linux-arm64-musl/-/plugin-doctor-linux-arm64-musl-0.0.10.tgz#796f10075c9614928252e81ab8df5230bfed9bb6"
+  integrity sha512-pwAvOK6g+3HpXnlI20M3U9466raduAs1gXo107xbRTODPB9xtfit/4oYOE+DScboPAZoI267Idw18u/W75XDdw==
 
-"@tarojs/plugin-doctor-win32-x64-msvc@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.npmmirror.com/@tarojs/plugin-doctor-win32-x64-msvc/-/plugin-doctor-win32-x64-msvc-0.0.5.tgz#661487bbb66c5fe9f18344d93dabf6275a11d233"
-  integrity sha512-8rXJqG8+c5tXDxfuevpLKVxWspWUzcfu1n+rNjF6UeSixPQg3Wnim6OvQk6Nsf8MvhCZwV5x8zM3jHMBgptrkQ==
+"@tarojs/plugin-doctor-linux-x64-gnu@0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmmirror.com/@tarojs/plugin-doctor-linux-x64-gnu/-/plugin-doctor-linux-x64-gnu-0.0.10.tgz#9725c917a40612b59773de3551dfb9f164938215"
+  integrity sha512-ISnIhgdo4ayfCzKpW4skdtyOUQvROvHLSh44I8DYmt2vcfx3w2eoi8PJICgIqeFNnkJZ4QwBPLjNfGSXMUfCOA==
 
-"@tarojs/plugin-doctor@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.npmmirror.com/@tarojs/plugin-doctor/-/plugin-doctor-0.0.5.tgz#8cbfe62e7fa7bc97e48c4ad58e958953168e36d1"
-  integrity sha512-8rcW55vRdW1qlmU9T863IxEOcFlk6t4ta1WjDQuuE/GxlaXVpAa+kRlYp3NQeabQMxfMlB/NNfwAGLWsK+CiPA==
+"@tarojs/plugin-doctor-linux-x64-musl@0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmmirror.com/@tarojs/plugin-doctor-linux-x64-musl/-/plugin-doctor-linux-x64-musl-0.0.10.tgz#926f7d78e78620a3d9da981468ee382959d2ac03"
+  integrity sha512-IDj69YAjKzSap934MBWDcPm8EmC6apVAEVcmSlzHmbXvuJ0irUqsnlT3DFv7cNidluo1TPlL1N8NaStM9moCUA==
+
+"@tarojs/plugin-doctor-win32-ia32-msvc@0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmmirror.com/@tarojs/plugin-doctor-win32-ia32-msvc/-/plugin-doctor-win32-ia32-msvc-0.0.10.tgz#7ba5cf251d3c1a473391c1f3784e549ad13718d0"
+  integrity sha512-wTSsl+wFWnHSiDLW0pNv+TzLZMFKcf6w00gDgsO9Wus4z9Zxmgz9isOYQOT3hSn94XeLUej6QXMllaTM5bpHPw==
+
+"@tarojs/plugin-doctor-win32-x64-msvc@0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmmirror.com/@tarojs/plugin-doctor-win32-x64-msvc/-/plugin-doctor-win32-x64-msvc-0.0.10.tgz#f49c25ed3242726489270c92d5712ba10a3e1b16"
+  integrity sha512-xPHimUsTFNgot4m4zN6iE2UKbn7GlKrJP0XYXrANRnbXlcQQ8a6kcO9oNo341EF4djsEBjQ0CbDEtDbNvfLKVA==
+
+"@tarojs/plugin-doctor@0.0.10":
+  version "0.0.10"
+  resolved "https://registry.npmmirror.com/@tarojs/plugin-doctor/-/plugin-doctor-0.0.10.tgz#c77c56aa348a8ec797c7b13872c34437bf9a3c2e"
+  integrity sha512-ov8CRb2w92KDSJRM5IhJILeC5/D/m4QMEt8ZVfm9SrMgoLrvK8klwgGNOiKz0JLPy4vCNtU/oNRxleEYGQrlZg==
   dependencies:
     "@tarojs/service" "3.6.7"
     eslint "8.41.0"
     glob "10.2.6"
   optionalDependencies:
-    "@tarojs/plugin-doctor-darwin-arm64" "0.0.5"
-    "@tarojs/plugin-doctor-darwin-x64" "0.0.5"
-    "@tarojs/plugin-doctor-linux-arm64-gnu" "0.0.5"
-    "@tarojs/plugin-doctor-linux-arm64-musl" "0.0.5"
-    "@tarojs/plugin-doctor-linux-x64-gnu" "0.0.5"
-    "@tarojs/plugin-doctor-win32-arm64-msvc" "0.0.5"
-    "@tarojs/plugin-doctor-win32-ia32-msvc" "0.0.5"
-    "@tarojs/plugin-doctor-win32-x64-msvc" "0.0.5"
+    "@tarojs/plugin-doctor-darwin-arm64" "0.0.10"
+    "@tarojs/plugin-doctor-darwin-universal" "0.0.10"
+    "@tarojs/plugin-doctor-darwin-x64" "0.0.10"
+    "@tarojs/plugin-doctor-freebsd-x64" "0.0.10"
+    "@tarojs/plugin-doctor-linux-arm-gnueabihf" "0.0.10"
+    "@tarojs/plugin-doctor-linux-arm64-gnu" "0.0.10"
+    "@tarojs/plugin-doctor-linux-arm64-musl" "0.0.10"
+    "@tarojs/plugin-doctor-linux-x64-gnu" "0.0.10"
+    "@tarojs/plugin-doctor-linux-x64-musl" "0.0.10"
+    "@tarojs/plugin-doctor-win32-ia32-msvc" "0.0.10"
+    "@tarojs/plugin-doctor-win32-x64-msvc" "0.0.10"
 
-"@tarojs/plugin-framework-react@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/plugin-framework-react/-/plugin-framework-react-3.6.8.tgz#0b8688776ffe1a4c0a7ddbd8c24401a6010fba32"
-  integrity sha512-sO06u/6e/ErutTtmlin9OnZZ+J528CEgDGfHbapxCSW0rI6XDSt1huhAGZbgO3sTiHA8g+1SPItVaoqBuitv4Q==
+"@tarojs/plugin-framework-react@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/plugin-framework-react/-/plugin-framework-react-3.6.9-alpha.6.tgz#ee60ff2a37d64f30bcb6be588c757056d9251312"
+  integrity sha512-/vCAZB6l2u6u+OAC8rnUGzys/LfsvHQDKk+LhH+p1GxnG8M6Y2pbJ0qyddSRFCO0L2QvEiipegS+p+jEIGEitw==
   dependencies:
-    "@tarojs/helper" "3.6.8"
-    "@tarojs/runtime" "3.6.8"
-    "@tarojs/service" "3.6.8"
-    "@tarojs/shared" "3.6.8"
+    "@tarojs/helper" "3.6.9-alpha.6"
+    "@tarojs/runtime" "3.6.9-alpha.6"
+    "@tarojs/service" "3.6.9-alpha.6"
+    "@tarojs/shared" "3.6.9-alpha.6"
     acorn "^8.0.4"
     acorn-walk "^8.0.0"
     lodash "^4.17.21"
 
-"@tarojs/plugin-platform-alipay@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/plugin-platform-alipay/-/plugin-platform-alipay-3.6.8.tgz#772c3a9ef0fcf4987bb64df256d0005b7f73725f"
-  integrity sha512-w2bnh8LE7/eX/3dNmX5HsoQnXXFJeitgp4giU5RRXnWbVEEpuq1QytQT1Bx4jIHFFQ58Bqjl6UuTsfRNTmMAfw==
+"@tarojs/plugin-platform-alipay@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/plugin-platform-alipay/-/plugin-platform-alipay-3.6.9-alpha.6.tgz#b32f74f9a20e132e2b221350e67962a8603d226d"
+  integrity sha512-OlE1el7NlDAL6EYf9633+PFacblZ5+IX3TUWUqqY97nl/BIT2V3vrAhPOB+d4M8+N+TnqlK2p70RzP6ElzwttA==
   dependencies:
-    "@tarojs/components" "3.6.8"
-    "@tarojs/service" "3.6.8"
-    "@tarojs/shared" "3.6.8"
+    "@tarojs/components" "3.6.9-alpha.6"
+    "@tarojs/service" "3.6.9-alpha.6"
+    "@tarojs/shared" "3.6.9-alpha.6"
 
-"@tarojs/plugin-platform-h5@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/plugin-platform-h5/-/plugin-platform-h5-3.6.8.tgz#f71479c997ed6e44bd787444fc45282a165fd279"
-  integrity sha512-uDlsEI9OnDrme6kS8zppEDd+mu04Oc5vFwqgW2DoI5HuoHn4wKm/HD0sxc83ga0FNoPd1OO/OT/4qhdBTUhivA==
+"@tarojs/plugin-platform-h5@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/plugin-platform-h5/-/plugin-platform-h5-3.6.9-alpha.6.tgz#0c64eff4e8e77ec0662a9a075c5dc2f5e03c0211"
+  integrity sha512-zkb0qhs9XOEEOj/aUD8VigaD67S70lo1MBUoT5JUXQmX0SaTIbFle3+WGORbRapZpEjpuZr3tXXrQZi4UBnRrg==
   dependencies:
-    "@tarojs/components" "3.6.8"
-    "@tarojs/components-react" "3.6.8"
-    "@tarojs/router" "3.6.8"
-    "@tarojs/service" "3.6.8"
-    "@tarojs/shared" "3.6.8"
-    "@tarojs/taro-h5" "3.6.8"
-    babel-plugin-transform-taroapi "3.6.8"
+    "@tarojs/components" "3.6.9-alpha.6"
+    "@tarojs/components-react" "3.6.9-alpha.6"
+    "@tarojs/router" "3.6.9-alpha.6"
+    "@tarojs/service" "3.6.9-alpha.6"
+    "@tarojs/shared" "3.6.9-alpha.6"
+    "@tarojs/taro-h5" "3.6.9-alpha.6"
+    babel-plugin-transform-taroapi "3.6.9-alpha.6"
     change-case "^4.1.2"
     lodash-es "4.17.21"
     resolve "^1.22.0"
 
-"@tarojs/plugin-platform-jd@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/plugin-platform-jd/-/plugin-platform-jd-3.6.8.tgz#c04d79a01e237f47519ad54776824c0fea509ab3"
-  integrity sha512-sLUc4o8mrctEpwSPDzY8Z0h0PI09E8k1cbKtjW/oKcdlTrJzPg4448tCMHgTz0MKSATBq/iN0qiNVqqtFixDtg==
+"@tarojs/plugin-platform-jd@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/plugin-platform-jd/-/plugin-platform-jd-3.6.9-alpha.6.tgz#35cc93ec68f8e37dc668ac11a2e051ee30c0a98b"
+  integrity sha512-n2Tfm31i1Y+1zjX0aTZb/8IpS9MpxfmSMZbHlj38UvQUzDeXg/ZQGKH7V/ELoHLWWTCwljO8FGenYPA6aaOfrg==
   dependencies:
-    "@tarojs/service" "3.6.8"
-    "@tarojs/shared" "3.6.8"
+    "@tarojs/service" "3.6.9-alpha.6"
+    "@tarojs/shared" "3.6.9-alpha.6"
 
-"@tarojs/plugin-platform-qq@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/plugin-platform-qq/-/plugin-platform-qq-3.6.8.tgz#9cf1a1d2861e5edbebf94094d776044141d3ea70"
-  integrity sha512-jrqQ+fTWey02kEgHgFPO4zQm3J6IFdJ5KUk0S/xQP1yDRkm3OXr+V6g6+eJuRK/LmtHzCVEDpKwr7+DeFonGmw==
+"@tarojs/plugin-platform-qq@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/plugin-platform-qq/-/plugin-platform-qq-3.6.9-alpha.6.tgz#ed036ee22891a4955fbeb55d72d26fe5d0143e84"
+  integrity sha512-5Z4gU2iGOLiSFmshtC40S/0rJxy1jhlDJZWuYZrM3PS+M09fwuiAHT2weVZYCCnkBttKbpizkZptMetUEIw4Eg==
   dependencies:
-    "@tarojs/plugin-platform-weapp" "3.6.8"
-    "@tarojs/service" "3.6.8"
-    "@tarojs/shared" "3.6.8"
+    "@tarojs/plugin-platform-weapp" "3.6.9-alpha.6"
+    "@tarojs/service" "3.6.9-alpha.6"
+    "@tarojs/shared" "3.6.9-alpha.6"
 
-"@tarojs/plugin-platform-swan@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/plugin-platform-swan/-/plugin-platform-swan-3.6.8.tgz#240f34e523bb7f2f540976742d507ad84b7de67b"
-  integrity sha512-87pvEbJfUfX8p5wHh4GzoisgV1BqOAfs15kQ2s+YyMEr8FWaTO+bpOXpjGw2TAhwzbcc1jbDin1Juh8aR+J5cg==
+"@tarojs/plugin-platform-swan@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/plugin-platform-swan/-/plugin-platform-swan-3.6.9-alpha.6.tgz#98e29082a23ba027f08dea925248a111eeef65cf"
+  integrity sha512-mjxXdnNb6XmGZdq9HOchKKVZO2afG45LUiWyuebzlCzwwoCjuPUxYZy5yxYFcVWo/MmpUFxuPSwPDcDvGX8Xaw==
   dependencies:
-    "@tarojs/components" "3.6.8"
-    "@tarojs/service" "3.6.8"
-    "@tarojs/shared" "3.6.8"
+    "@tarojs/components" "3.6.9-alpha.6"
+    "@tarojs/service" "3.6.9-alpha.6"
+    "@tarojs/shared" "3.6.9-alpha.6"
 
-"@tarojs/plugin-platform-tt@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/plugin-platform-tt/-/plugin-platform-tt-3.6.8.tgz#14b820389065394a90eab68dce43a057fd6c6b12"
-  integrity sha512-hwaa4pVjDxcD678aeC9Anetcbjw3PRLxZZoqVzkJR9s/U/XZssQY629bvEC+dlojzhGCUJ3qBKYkGqxMLXtTQA==
+"@tarojs/plugin-platform-tt@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/plugin-platform-tt/-/plugin-platform-tt-3.6.9-alpha.6.tgz#88fc2ce7725d7b2fdd2634ab08bbe926ebab7771"
+  integrity sha512-jBT6Z4vSxLrrb5cdGt16hLO1lJW6vCGtrRNEL6bPNFh6Q8U6theOy0aKmZ4mroKMPCg7zflde5iapdbESwcerQ==
   dependencies:
-    "@tarojs/components" "3.6.8"
-    "@tarojs/service" "3.6.8"
-    "@tarojs/shared" "3.6.8"
+    "@tarojs/components" "3.6.9-alpha.6"
+    "@tarojs/service" "3.6.9-alpha.6"
+    "@tarojs/shared" "3.6.9-alpha.6"
 
-"@tarojs/plugin-platform-weapp@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/plugin-platform-weapp/-/plugin-platform-weapp-3.6.8.tgz#53a774943026e4e6b44d98599079822766d8ae76"
-  integrity sha512-g3H1XOvXJ9oZE0Qub+y6ImKph7SgJfmJF7YTiAHx8Yklzid/X2AKpDELgeL6kxqqI5A8sevgtS80hIFfhOd1Yw==
+"@tarojs/plugin-platform-weapp@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/plugin-platform-weapp/-/plugin-platform-weapp-3.6.9-alpha.6.tgz#b7b583c9b074ff755f3d43ecaa814f9cecc2e686"
+  integrity sha512-H2/TEurUyHgCF0WC2Q+iGnC7mMDs3+/ovoMuUQQ5SWT/nI6e7HtAKpQGTfnP5Ol6V5kgYyfgGbptNLaSxXfQbg==
   dependencies:
-    "@tarojs/components" "3.6.8"
-    "@tarojs/service" "3.6.8"
-    "@tarojs/shared" "3.6.8"
+    "@tarojs/components" "3.6.9-alpha.6"
+    "@tarojs/service" "3.6.9-alpha.6"
+    "@tarojs/shared" "3.6.9-alpha.6"
 
-"@tarojs/react@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/react/-/react-3.6.8.tgz#baf1979c4fe4d77c3496715c7c7f4f62ba1c99f4"
-  integrity sha512-UoNfKTUAkrWXNd/p2aoNCPbjuPKh9uTdMuYQWyPRk2eeGlDm8JJjwqYPNro0FMIjWQv2gkEsGkLdI7K7GDLhEg==
+"@tarojs/react@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/react/-/react-3.6.9-alpha.6.tgz#c153c312e225df91fb8a6161dc54985f10837256"
+  integrity sha512-PVn8RZfS3UTia7mKDsl5AUpvQl5+vyo5RoQt7xWD5jog+5UbUK+7NkJMiJ/J+yC8Nmqgr0xbw2tFoua/345fSQ==
   dependencies:
-    "@tarojs/runtime" "3.6.8"
-    "@tarojs/shared" "3.6.8"
+    "@tarojs/runtime" "3.6.9-alpha.6"
+    "@tarojs/shared" "3.6.9-alpha.6"
     react-reconciler "0.27.0"
 
-"@tarojs/router@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/router/-/router-3.6.8.tgz#808f22d85be98c122b3a03af5238468dbe44149f"
-  integrity sha512-ilZuLS4vBmTz9weLSgS1/HswaFFIuvwuDSDYedr8xbCiG+ZDvc+dXck8Cpxxh0flHdAKkmvX8omMnsrfCS35tQ==
+"@tarojs/router@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/router/-/router-3.6.9-alpha.6.tgz#3eecd30202258d4c57e34866086b93db5db070b3"
+  integrity sha512-Je3wl/wO8KBL30UDLbLXdYQtChltQYvzYrcsQlCLyGdBXyCGh1NMO7chTT4mNCowUfkh7t8/dhbfbiM3VBZVcw==
   dependencies:
-    "@tarojs/runtime" "3.6.8"
-    "@tarojs/taro" "3.6.8"
+    "@tarojs/runtime" "3.6.9-alpha.6"
+    "@tarojs/taro" "3.6.9-alpha.6"
     dingtalk-jsapi "~2.15.2"
     history "^5.1.0"
     mobile-detect "^1.4.2"
     query-string "^7.1.1"
     universal-router "^8.3.0"
 
-"@tarojs/runner-utils@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/runner-utils/-/runner-utils-3.6.8.tgz#d4715658b29c0bfc96da63b14eac67dad2f938c0"
-  integrity sha512-nulKYtCLCSiBqQ4DfHcbcOg1TS20xjbdk76hINjE2Vj58boLNyUr3YneoZWkM6CQoqxf69rAG28+Rm+PtVvReg==
+"@tarojs/runner-utils@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/runner-utils/-/runner-utils-3.6.9-alpha.6.tgz#7b5a5564379771ee35ec4c75579d6d9f460c2c74"
+  integrity sha512-T2EeB5qfzFMdOUNF3dYESeom99mgdEzkhVxI4bMAU8C6JbkeNQyAEk4rBHoxx8sEBoq45b3/12JA57VEX3jXPw==
   dependencies:
-    "@tarojs/helper" "3.6.8"
+    "@tarojs/helper" "3.6.9-alpha.6"
     scss-bundle "^3.0.2"
 
 "@tarojs/runtime@3.6.7":
@@ -1859,12 +1877,12 @@
     "@tarojs/shared" "3.6.7"
     lodash-es "4.17.21"
 
-"@tarojs/runtime@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/runtime/-/runtime-3.6.8.tgz#b393690554181f387ceb0d283a9460a096045cce"
-  integrity sha512-x1hEHiHDGKYFROaOebKnA0CKK0HPSACw+na2eSsFbzV3S5eLBT8s4ljDvoHwQ72o6ejkQgvu7ajog3qEB2tlcw==
+"@tarojs/runtime@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/runtime/-/runtime-3.6.9-alpha.6.tgz#6ac114accccd8a177cf6975115e7d98a0271e627"
+  integrity sha512-/P0ff496/f6HXmvw848yS9cUhy0BHvDLBVRzJ1tqhClWXX21gCABcbzUaM9it7gjFZci4eYTRz39Br9vgYJslQ==
   dependencies:
-    "@tarojs/shared" "3.6.8"
+    "@tarojs/shared" "3.6.9-alpha.6"
     lodash-es "4.17.21"
 
 "@tarojs/service@3.6.7":
@@ -1882,14 +1900,14 @@
     tapable "^1.1.3"
     webpack-merge "^4.2.2"
 
-"@tarojs/service@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/service/-/service-3.6.8.tgz#111e689ee0ffd111c5e41db55f4415bb6d55a3b4"
-  integrity sha512-CgDNk7fVs1DPMsdl+Qu4HE2PbhcMGBypaPlFtKmeGB9LWxpwqVSmSILwcfI3ow9ZvrGS0n2i+XV6zwcigDRpjg==
+"@tarojs/service@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/service/-/service-3.6.9-alpha.6.tgz#a2cbd2a0c2df64d5d465dfe7cb072601bbae5fc6"
+  integrity sha512-JKmG3diD1TcEWJ8KgJMMFTTDznF7kA/Fzg5y0+nrhS2OaJXSJszd6zsQAosKg//s32+gUi17rUXtwKgvYWDcAg==
   dependencies:
-    "@tarojs/helper" "3.6.8"
-    "@tarojs/shared" "3.6.8"
-    "@tarojs/taro" "3.6.8"
+    "@tarojs/helper" "3.6.9-alpha.6"
+    "@tarojs/shared" "3.6.9-alpha.6"
+    "@tarojs/taro" "3.6.9-alpha.6"
     joi "^17.6.0"
     lodash "^4.17.21"
     ora "^5.0.0"
@@ -1902,21 +1920,21 @@
   resolved "https://registry.npmmirror.com/@tarojs/shared/-/shared-3.6.7.tgz#276cd86151b050a0f72813fff77d3f6a326d63dc"
   integrity sha512-KOgj1TA+FyFy1ap0gZrB6ilC4H764ivSMyfr8mvlYgygevssticmaKTzkhZsNXRQFOQ+jjZ59cLh0F7VBVhlxg==
 
-"@tarojs/shared@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/shared/-/shared-3.6.8.tgz#ed9a4178dd0542f1ad1fa107f9abb38accc52cf5"
-  integrity sha512-niHYE2+9EtpfiLdJCdXiZ6ZirSNbPu5HaPMSZlRXYf1KzEWiyzGSpn/Cew4M3gbWti101xfVjNKZLTD9NlUmGg==
+"@tarojs/shared@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/shared/-/shared-3.6.9-alpha.6.tgz#5745f28cd756bbe74205c47705d0c5536336a050"
+  integrity sha512-/ItExyVaQg0Z9bygc7fwHNDc9a0nrLzo+xLdvzsNTsF9gMxfmoY7mo69LhmgJy7xBYOjXFYSVRJ2tGrhu+Pcow==
 
-"@tarojs/taro-h5@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/taro-h5/-/taro-h5-3.6.8.tgz#003fff76b34702467d1f3d2a076e03d25805f0a3"
-  integrity sha512-A1JxCbkDrF9xNSwZfoPma++1U6q+Wp0Cf1DjCILZw+OZgQbKJrYpxOSvSDfATMuMrkZ1c3U/PVrhubr7UnuWtA==
+"@tarojs/taro-h5@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/taro-h5/-/taro-h5-3.6.9-alpha.6.tgz#1ce765c548d9f844d897cc4ef95e5544502217b4"
+  integrity sha512-vhpAmiBXzgV1/V8MtSGKHiQ8T6NywPalEZ2iQPOfw5Rgk6YAOjWY7a+h2HUKKS82UBkqk3DV2sKRp2vMcV5/AQ==
   dependencies:
-    "@tarojs/api" "3.6.8"
-    "@tarojs/components" "3.6.8"
-    "@tarojs/router" "3.6.8"
-    "@tarojs/runtime" "3.6.8"
-    "@tarojs/shared" "3.6.8"
+    "@tarojs/api" "3.6.9-alpha.6"
+    "@tarojs/components" "3.6.9-alpha.6"
+    "@tarojs/router" "3.6.9-alpha.6"
+    "@tarojs/runtime" "3.6.9-alpha.6"
+    "@tarojs/shared" "3.6.9-alpha.6"
     abortcontroller-polyfill "^1.7.5"
     base64-js "^1.3.0"
     ics "^3.1.0"
@@ -1926,13 +1944,13 @@
     query-string "^7.1.1"
     whatwg-fetch "^3.4.0"
 
-"@tarojs/taro-loader@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/taro-loader/-/taro-loader-3.6.8.tgz#01f6362ae383002d078760210f221c2a19644a3e"
-  integrity sha512-0Dz4PhBKDv6mYYNd5sl8R/QYtN8vORs+dWINUL4GaWoE47mnEP2rJ+0OE+O9X8nXYwJlAcmcRO06eukO1pDR5A==
+"@tarojs/taro-loader@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/taro-loader/-/taro-loader-3.6.9-alpha.6.tgz#2d0f47a4d8d3c267f28e3d9c2c03e5c24405967c"
+  integrity sha512-ZkzwMmqcAgc8y5RhaED9FpQM424vBErueZVrcZPa43zvpJ9htdnGqa5EMafaCICrKAfnFMggHGeT+bL5fwpDug==
   dependencies:
-    "@tarojs/helper" "3.6.8"
-    "@tarojs/taro" "3.6.8"
+    "@tarojs/helper" "3.6.9-alpha.6"
+    "@tarojs/taro" "3.6.9-alpha.6"
     loader-utils "^1.2.3"
 
 "@tarojs/taro@3.6.7":
@@ -1943,46 +1961,46 @@
     "@tarojs/api" "3.6.7"
     "@tarojs/runtime" "3.6.7"
 
-"@tarojs/taro@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/taro/-/taro-3.6.8.tgz#efd3b0c95c2d5a48a0b9bddf79bfce790d16300c"
-  integrity sha512-pylsuFNEExcwgbSx0DYbIvWQe9448PKZmtyDH+gMnfgsV3ZO9eZIhBfXJ/4MzFeFU0lsFAbkTfVsnDuugc+gAw==
+"@tarojs/taro@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/taro/-/taro-3.6.9-alpha.6.tgz#6f26e4f8e40f54618463fe39e010a130ecd14ec2"
+  integrity sha512-4TBDVtlAteyoKLYdq7yWFjutCMBYUcEu/CQi+25aOQ06rKdhBg2e4udjqmFTZd+Fv5woXrMn6ZOHxGESW7ePqA==
   dependencies:
-    "@tarojs/api" "3.6.8"
-    "@tarojs/runtime" "3.6.8"
+    "@tarojs/api" "3.6.9-alpha.6"
+    "@tarojs/runtime" "3.6.9-alpha.6"
 
-"@tarojs/webpack5-prebundle@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/webpack5-prebundle/-/webpack5-prebundle-3.6.8.tgz#8bb0e5d05c98a033b1887bedf4073b55f467cb4b"
-  integrity sha512-yLkffJrh3TARHJ9EJeg3NZ0Hy0Kns5bGUYWqwoX63hFTQmHrHL6HdHvWgOvTSXERzWTkv/qtXubobiPWNIHdTw==
+"@tarojs/webpack5-prebundle@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/webpack5-prebundle/-/webpack5-prebundle-3.6.9-alpha.6.tgz#3d683f1b2466f76a3cedaabba7b66ebc9bc1b784"
+  integrity sha512-Igybab8slTgY/R7D5d1z5/bwz/ARIzUV1bAWAUN0JzaKvYbn1fpiRXv+AYF6XX6RwwdTw8vNYK4c11WnMkvhzQ==
   dependencies:
-    "@tarojs/helper" "3.6.8"
-    "@tarojs/taro" "3.6.8"
+    "@tarojs/helper" "3.6.9-alpha.6"
+    "@tarojs/taro" "3.6.9-alpha.6"
     enhanced-resolve "^5.9.3"
     es-module-lexer "^0.10.4"
     lodash "^4.17.21"
     webpack-chain "6.5.1"
     webpack-virtual-modules "^0.5.0"
 
-"@tarojs/webpack5-runner@3.6.8":
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/@tarojs/webpack5-runner/-/webpack5-runner-3.6.8.tgz#3a4be78d575243a5d81e2ad6c793c08b37695261"
-  integrity sha512-aTRhb62LnY9orD5ggZaf+pVj+Y5z95yg9vUlCEqpPjzYZTz4LaxYnqG0f9i+RmrHSORPIkk4nb7lVTF9CcUXLg==
+"@tarojs/webpack5-runner@3.6.9-alpha.6":
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/@tarojs/webpack5-runner/-/webpack5-runner-3.6.9-alpha.6.tgz#8b9145a39c616ef673e08acbe13df1f094c2b71f"
+  integrity sha512-ltlcnpUsQqlnQ7ByQQhI3unH4CUSyeQpMm+0sour/NMjhxwWum2GsOGhZy05lG0ygCVyYUxEXzkY6YGitgmmgg==
   dependencies:
     "@parcel/css" "^1.4.0"
-    "@tarojs/helper" "3.6.8"
-    "@tarojs/plugin-platform-alipay" "3.6.8"
-    "@tarojs/plugin-platform-jd" "3.6.8"
-    "@tarojs/plugin-platform-qq" "3.6.8"
-    "@tarojs/plugin-platform-swan" "3.6.8"
-    "@tarojs/plugin-platform-tt" "3.6.8"
-    "@tarojs/plugin-platform-weapp" "3.6.8"
-    "@tarojs/runner-utils" "3.6.8"
-    "@tarojs/runtime" "3.6.8"
-    "@tarojs/shared" "3.6.8"
-    "@tarojs/taro" "3.6.8"
-    "@tarojs/taro-loader" "3.6.8"
-    "@tarojs/webpack5-prebundle" "3.6.8"
+    "@tarojs/helper" "3.6.9-alpha.6"
+    "@tarojs/plugin-platform-alipay" "3.6.9-alpha.6"
+    "@tarojs/plugin-platform-jd" "3.6.9-alpha.6"
+    "@tarojs/plugin-platform-qq" "3.6.9-alpha.6"
+    "@tarojs/plugin-platform-swan" "3.6.9-alpha.6"
+    "@tarojs/plugin-platform-tt" "3.6.9-alpha.6"
+    "@tarojs/plugin-platform-weapp" "3.6.9-alpha.6"
+    "@tarojs/runner-utils" "3.6.9-alpha.6"
+    "@tarojs/runtime" "3.6.9-alpha.6"
+    "@tarojs/shared" "3.6.9-alpha.6"
+    "@tarojs/taro" "3.6.9-alpha.6"
+    "@tarojs/taro-loader" "3.6.9-alpha.6"
+    "@tarojs/webpack5-prebundle" "3.6.9-alpha.6"
     acorn-walk "^8.0.0"
     autoprefixer "^9.7.4"
     babel-loader "8.2.1"
@@ -2007,11 +2025,11 @@
     miniprogram-simulate "^1.1.5"
     mkdirp "^1.0.4"
     ora "^5.0.0"
-    postcss-html-transform "3.6.8"
+    postcss-html-transform "3.6.9-alpha.6"
     postcss-import "^14.0.0"
     postcss-loader "^7.0.1"
-    postcss-plugin-constparse "3.6.8"
-    postcss-pxtransform "3.6.8"
+    postcss-plugin-constparse "3.6.9-alpha.6"
+    postcss-pxtransform "3.6.9-alpha.6"
     postcss-url "^10.1.3"
     regenerator-runtime "0.11"
     resolve "^1.22.0"
@@ -3196,25 +3214,25 @@ babel-plugin-transform-imports-api@1.0.0:
   dependencies:
     is-invalid-path "^1.0.2"
 
-babel-plugin-transform-react-jsx-to-rn-stylesheet@3.6.8:
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/babel-plugin-transform-react-jsx-to-rn-stylesheet/-/babel-plugin-transform-react-jsx-to-rn-stylesheet-3.6.8.tgz#00571b94b679bbec71c9d2b11fbe5b1513829f1f"
-  integrity sha512-l6ccqBTHrq1iFeceJjfNHedq6j1YsmKyMPJg7n3N48gF0lCSJYC6/3Ru8tdHd+Wj0eBSXkox6nedTJFEsfbP5A==
+babel-plugin-transform-react-jsx-to-rn-stylesheet@3.6.9-alpha.6:
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/babel-plugin-transform-react-jsx-to-rn-stylesheet/-/babel-plugin-transform-react-jsx-to-rn-stylesheet-3.6.9-alpha.6.tgz#650fcef6c2331b7b40e156172403879a6010bf31"
+  integrity sha512-NKODKMlaGu8+/OLbdkwMiWxxzIW5IC6ApAYHLOXsa805uvRbSTz05w+kkZTa6Veb5oxkJ+eMoFUlPYMgvFZR8Q==
   dependencies:
     camelize "^1.0.0"
-    taro-css-to-react-native "3.6.8"
+    taro-css-to-react-native "3.6.9-alpha.6"
 
-babel-plugin-transform-taroapi@3.6.8:
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/babel-plugin-transform-taroapi/-/babel-plugin-transform-taroapi-3.6.8.tgz#9c4c7f81d6e4f6ef8abe750c40d25c45f862dfab"
-  integrity sha512-Vz7CcrLZuIXrrf+W/MNx4SxFFYYH93z0cP3mc/XzS3wTNCOg4BZzmCfWqTv6nfU8fiXoMuPbsU0PF8ErwGIbAQ==
+babel-plugin-transform-taroapi@3.6.9-alpha.6:
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/babel-plugin-transform-taroapi/-/babel-plugin-transform-taroapi-3.6.9-alpha.6.tgz#25838ba6e082bcab911d82fe47bf10d40035de26"
+  integrity sha512-42/yNIgCaWhr7pbjz1ZOAyKnPn1OXHv1oEjdLoMceZdqQxEVtTTqkobHH+3TEXoCmPQT+UX4D9/dREhbK87qTQ==
   dependencies:
     lodash "^4.17.21"
 
-babel-preset-taro@3.6.8:
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/babel-preset-taro/-/babel-preset-taro-3.6.8.tgz#7512869056397e82d38121454d3980a8bb1fc40c"
-  integrity sha512-TQXLwtzK3PhePe7NNjytsP+pstfuoFXjsEMWEuq2FdMRBT0YctXI5d0zUFpuY1pDXn2IQeXjJEt1almUmZBbuQ==
+babel-preset-taro@3.6.9-alpha.6:
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/babel-preset-taro/-/babel-preset-taro-3.6.9-alpha.6.tgz#6cd1e6adfce84afd769e1f960e2c17aa0588892b"
+  integrity sha512-WLU+W3E1hMLytP1yuGfj5MxaD8agU1oxz4atyQdxrhXkbGwUbEWJAe9v1FvvIfu47cU8cqp34JMGxMGGzsE9Yg==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.14.5"
     "@babel/plugin-proposal-decorators" "^7.14.5"
@@ -3225,14 +3243,14 @@ babel-preset-taro@3.6.8:
     "@babel/preset-typescript" "^7.14.5"
     "@babel/runtime" "^7.14.5"
     "@babel/runtime-corejs3" "^7.14.5"
-    "@tarojs/helper" "3.6.8"
-    "@tarojs/shared" "3.6.8"
+    "@tarojs/helper" "3.6.9-alpha.6"
+    "@tarojs/shared" "3.6.9-alpha.6"
     babel-plugin-dynamic-import-node "2.3.3"
     babel-plugin-global-define "1.0.3"
     babel-plugin-jsx-attributes-array-to-object "0.3.0"
     babel-plugin-minify-dead-code-elimination "^0.5.2"
     babel-plugin-transform-imports-api "1.0.0"
-    babel-plugin-transform-react-jsx-to-rn-stylesheet "3.6.8"
+    babel-plugin-transform-react-jsx-to-rn-stylesheet "3.6.9-alpha.6"
     core-js "^3.6.5"
     lodash "^4.17.21"
     metro-react-native-babel-preset "^0.72.1"
@@ -5283,10 +5301,10 @@ escodegen@^2.0.0:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-taro@3.6.8:
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/eslint-config-taro/-/eslint-config-taro-3.6.8.tgz#2922ebb9fca43f02034bd9bae7180b04c1bc47c3"
-  integrity sha512-sPJKdLe4QvuJ27ntP5Tq5vKNgBdg7VzMW5kE4uEtaWAvy0KbuQVVJ7Cj0pasS+kgOdAkecE3M/aX8KXABvgkWw==
+eslint-config-taro@3.6.9-alpha.6:
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/eslint-config-taro/-/eslint-config-taro-3.6.9-alpha.6.tgz#e65e5ed36e490456f7922e1abb8f0497399f6186"
+  integrity sha512-jjh6wyWVpaWvc0mtfTS60zcNDUJViNFLfWT2CCGSoVAM1X+zHTUIExlkaLsEhs/34sX4hMmy1ybPKha9qNIjSQ==
   dependencies:
     "@babel/eslint-parser" "^7.17.0"
     "@typescript-eslint/parser" "^5.20.0"
@@ -5869,6 +5887,13 @@ filter-obj@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmmirror.com/filter-obj/-/filter-obj-1.1.0.tgz#9b311112bc6c6127a16e016c6c5d7f19e0805c5b"
   integrity sha512-8rXg1ZnX7xzy2NGDVkBVaAy+lSlPNwad13BtgSlLuxfIslyt5Vg64U7tFcCt4WS1R0hvtnQybT/IyCkGZ3DpXQ==
+
+final-form@^4.20.9:
+  version "4.20.9"
+  resolved "https://registry.npmmirror.com/final-form/-/final-form-4.20.9.tgz#647b459f8c504d77ec8f6e280015ab172982af2f"
+  integrity sha512-shA1X/7v8RmukWMNRHx0l7+Bm41hOivY78IvOiBrPVHjyWFIyqqIEMCz7yTVRc9Ea+EU4WkZ5r4MH6whSo5taw==
+  dependencies:
+    "@babel/runtime" "^7.10.0"
 
 finalhandler@1.2.0:
   version "1.2.0"
@@ -7517,9 +7542,9 @@ j-component@^1.4.9:
     miniprogram-exparser latest
 
 jackspeak@^2.0.3:
-  version "2.2.1"
-  resolved "https://registry.npmmirror.com/jackspeak/-/jackspeak-2.2.1.tgz#655e8cf025d872c9c03d3eb63e8f0c024fef16a6"
-  integrity sha512-MXbxovZ/Pm42f6cDIDkl3xpwv1AGwObKwfmjs2nQePiy85tP3fatofl3FC1aBsOtP/6fq5SbtgHwWcMsLP+bDw==
+  version "2.2.2"
+  resolved "https://registry.npmmirror.com/jackspeak/-/jackspeak-2.2.2.tgz#707c62733924b8dc2a0a629dc6248577788b5385"
+  integrity sha512-mgNtVv4vUuaKA97yxUHoA3+FkuhtxkjdXEWOyB/N76fjy0FjezEt34oy3epBtvCvS+7DyKwqCFWx/oJLV5+kCg==
   dependencies:
     "@isaacs/cliui" "^8.0.2"
   optionalDependencies:
@@ -9478,10 +9503,10 @@ postcss-discard-overridden@^5.1.0:
   resolved "https://registry.npmmirror.com/postcss-discard-overridden/-/postcss-discard-overridden-5.1.0.tgz#7e8c5b53325747e9d90131bb88635282fb4a276e"
   integrity sha512-21nOL7RqWR1kasIVdKs8HNqQJhFxLsyRfAnUDm4Fe4t4mCWL9OJiHvlHPjcd8zc5Myu89b/7wZDnOSjFgeWRtw==
 
-postcss-html-transform@3.6.8:
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/postcss-html-transform/-/postcss-html-transform-3.6.8.tgz#e099b414b9320472065e97b4305cad09c8e42fb1"
-  integrity sha512-rTkTr1kKI9TV1OKxiBF4KyIptlxhckH3Vuf8b44XGWRUOtnz7T+ZN88ziuLpCXLe/bgnWk/mK0uNh7lvwzus5Q==
+postcss-html-transform@3.6.9-alpha.6:
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/postcss-html-transform/-/postcss-html-transform-3.6.9-alpha.6.tgz#49901961158f306abeeb30a7aa142a3856d90794"
+  integrity sha512-4UJALTLug3U5f2RYxX0QbpgJ2okoARCTvvwRwiTcALbXCO85kd6BlwSRMZhcfi3KgfIEItaK9vqGcK/7w6VdmA==
 
 postcss-html@^0.28.0:
   version "0.28.0"
@@ -9677,15 +9702,15 @@ postcss-ordered-values@^5.1.3:
     cssnano-utils "^3.1.0"
     postcss-value-parser "^4.2.0"
 
-postcss-plugin-constparse@3.6.8:
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/postcss-plugin-constparse/-/postcss-plugin-constparse-3.6.8.tgz#fb48ccd3f9407bde13d751ad5e7169833b97efb4"
-  integrity sha512-uToLb+sDvv0qPm1YfEuNK4Qao3EjRbB+G4qKRV++hRe+aQsr61PDApAkshq/tvnfo6Y5aAt+4hUcaHsm9Lfpow==
+postcss-plugin-constparse@3.6.9-alpha.6:
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/postcss-plugin-constparse/-/postcss-plugin-constparse-3.6.9-alpha.6.tgz#78ff7953d2559cbee0de07ac2ba01a329952a0c2"
+  integrity sha512-IodquyDPGmYNkxDQA7cPrkiHV94871Q67Ptr1Ss8B5OCfcqomyQHxug/7xPE+kuUKC1MJ17pXA6CLqdW2vdWhQ==
 
-postcss-pxtransform@3.6.8:
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/postcss-pxtransform/-/postcss-pxtransform-3.6.8.tgz#df600f506daf4df2e35ea6debe22f3e95e83b12e"
-  integrity sha512-vugiugNRYOSM6HxlqG6xMq5dlCzbMYiYO60iA1b0cF/+9uJV5Vfb2+lMU8xULIYvD8Ww/mKtEKe2/j2GLXvpAw==
+postcss-pxtransform@3.6.9-alpha.6:
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/postcss-pxtransform/-/postcss-pxtransform-3.6.9-alpha.6.tgz#9cb523f5a1fbf44f00a071a61f8098511e772a84"
+  integrity sha512-t3cYCEoM/DJ0PMpwP0VU0NDLGuQxXDTqIai3qcWQFusVodaujiL9hk7tL/VACPLsQsU3MPXffot1jOCRQLNtXw==
 
 postcss-reduce-initial@^5.1.2:
   version "5.1.2"
@@ -11614,10 +11639,10 @@ taro-axios@^1.1.1:
   dependencies:
     axios "0.19.2"
 
-taro-css-to-react-native@3.6.8:
-  version "3.6.8"
-  resolved "https://registry.npmmirror.com/taro-css-to-react-native/-/taro-css-to-react-native-3.6.8.tgz#ba8606fff05f99bfe8442ab350c012699f35bb12"
-  integrity sha512-dBWevmFTHO4UKZ9x5X0zVv35l5xB54OC+h47XX6EM6b4cms3K5HmB4hYeS5n/YFan6Fq4m9RezQoa6Ei6nBAgg==
+taro-css-to-react-native@3.6.9-alpha.6:
+  version "3.6.9-alpha.6"
+  resolved "https://registry.npmmirror.com/taro-css-to-react-native/-/taro-css-to-react-native-3.6.9-alpha.6.tgz#c6614e5afaad4bce6c2ed109d2f07a3d65f1e20c"
+  integrity sha512-va6+3GWcZp6KgCxEi2H++o4j0H5879utXCrcdgXPvhyPfoiLNT21/gV1W8a31SrdWvdbepme0XFxdbtDledE5Q==
   dependencies:
     camelize "^1.0.0"
     css "^3.0.0"

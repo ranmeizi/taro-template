@@ -2,7 +2,7 @@
  * @Author: boboan 360969885@qq.com
  * @Date: 2023-07-24 11:40:58
  * @LastEditors: boboan 360969885@qq.com
- * @LastEditTime: 2023-07-24 12:51:13
+ * @LastEditTime: 2023-07-25 15:26:18
  * @FilePath: /taro-template/config/index.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -31,11 +31,17 @@ const config = {
     }
   },
   framework: 'react',
-  compiler: 'webpack5',
+  // compiler: 'webpack5',
+  compiler: {
+    type: 'webpack5',
+    prebundle: {
+      exclude: ['taro-ui']
+    },
+  },
   cache: {
     enable: false // Webpack 持久化缓存配置，建议开启。默认配置请参考：https://docs.taro.zone/docs/config-detail#cache
   },
-  alias:{
+  alias: {
     "@": resolve(__dirname, "..", "src/"),
   },
   mini: {
