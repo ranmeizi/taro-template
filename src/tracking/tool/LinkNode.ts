@@ -78,6 +78,21 @@ export function back(n: number): boolean {
     }
 }
 
+/** 应对直接switchtab的情况，提供一个清空函数 */
+export function clear() {
+    Stack.curr = null
+}
+
 export const Stack: { curr: LinkNode | null } = {
     curr: null
+}
+
+export function getPageInfo(): {
+    pageId?: string,
+    ref?: string
+} {
+    return {
+        pageId: Stack.curr?.val,
+        ref: Stack.curr?.prev?.val
+    }
 }

@@ -1,11 +1,3 @@
-/*
- * @Author: boboan 360969885@qq.com
- * @Date: 2023-07-24 23:43:31
- * @LastEditors: boboan 360969885@qq.com
- * @LastEditTime: 2023-07-25 00:09:52
- * @FilePath: /taro-template/src/contexts/AppPersist/index.ts
- * @Description: app 持久化 state
- */
 import Taro from '@tarojs/taro';
 import { PropsWithChildren, createContext, PureComponent } from 'react';
 

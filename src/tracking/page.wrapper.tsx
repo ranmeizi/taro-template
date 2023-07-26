@@ -1,17 +1,7 @@
-/*
- * @Author: boboan 360969885@qq.com
- * @Date: 2023-07-25 01:23:30
- * @LastEditors: boboan 360969885@qq.com
- * @LastEditTime: 2023-07-26 12:27:01
- * @FilePath: /taro-template/src/tracking/page.wrapper.tsx
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
-import useConstant from '@/hooks/useConstants';
 import { throttle } from '@/utils/delay';
-import Taro, { useDidHide, useDidShow, useLoad, useUnload } from '@tarojs/taro';
-import React from 'react';
-import * as PageHistory from './LinkNode';
+import { useDidHide, useDidShow, useLoad, useUnload } from '@tarojs/taro';
 import agent from './index';
+import * as PageHistory from './tool/LinkNode';
 
 type ExpandProps = {
   pageId: string;
@@ -41,6 +31,10 @@ const wrapTrackingPage: HOC_Expand<ExpandProps> = (Component: any) => {
     });
 
     useDidShow(() => {
+      if (tabView) {
+        tabIn(pageId);
+      }
+
       agent.track({
         event: 'show',
         pageId: pageId,
@@ -49,10 +43,6 @@ const wrapTrackingPage: HOC_Expand<ExpandProps> = (Component: any) => {
         event: 'stay',
         pageId: pageId,
       });
-
-      if (tabView) {
-        tabIn(pageId);
-      }
     });
 
     return <Component {...props} />;

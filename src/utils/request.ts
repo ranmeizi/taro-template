@@ -1,11 +1,3 @@
-/*
- * @Author: boboan 360969885@qq.com
- * @Date: 2023-07-25 00:10:36
- * @LastEditors: boboan 360969885@qq.com
- * @LastEditTime: 2023-07-25 00:15:54
- * @FilePath: /taro-template/src/utils/request.ts
- * @Description: 请求配置
- */
 import configs from '@/configs';
 import Taro from "@tarojs/taro";
 import { axios } from "taro-axios";
