@@ -16,3 +16,12 @@ declare namespace NodeJS {
     TARO_ENV: 'weapp' | 'swan' | 'alipay' | 'h5' | 'rn' | 'tt' | 'quickapp' | 'qq' | 'jd'
   }
 }
+
+type LinkNode = {
+  val: string
+  prev: LinkNode | null
+}
+
+interface Taro {
+  curr: LinkNode | null
+}

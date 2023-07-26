@@ -3,7 +3,6 @@ import Taro from '@tarojs/taro';
 import { ValidationErrors } from 'final-form';
 import { Field, Form } from 'react-final-form';
 import { AtInput } from 'taro-ui';
-import 'taro-ui/dist/style/components/input.scss';
 
 type Data = {
   phone: string;
