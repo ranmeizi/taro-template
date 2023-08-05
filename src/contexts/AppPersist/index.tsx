@@ -31,19 +31,20 @@ export class Provider extends PureComponent<PropsWithChildren> {
         this.setState({ ...result.data });
       },
     });
-
-    Taro.onAppHide(() => {
-      console.log('hide');
-      Taro.setStorage({
-        key: PERSIST_KEY,
-        data: this.state,
-      });
-    });
   }
 
   setToken(token: string) {
-    this.setState({ token });
+    this._setStorage({ token });
   }
+
+  /**
+   * 往 storage 里存一份
+   */
+  private _setStorage: typeof this.setState = (data: any) => {
+    this.setState(data, () => {
+      Taro.setStorageSync(PERSIST_KEY, this.state);
+    });
+  };
 
   render() {
     const { token, userInfo } = this.state;

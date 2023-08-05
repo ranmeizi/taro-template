@@ -1,38 +1,103 @@
-import { ScrollView, View } from '@tarojs/components';
-import Taro from '@tarojs/taro';
-import React, { CSSProperties, useMemo } from 'react';
+import useConstant from '@/hooks/useConstants';
+import useForceUpdate from '@/hooks/useForceUpdate';
 import wrapTrackingPage from '@/tracking/page.wrapper';
+import { View } from '@tarojs/components';
+import Taro from '@tarojs/taro';
+import React, {
+  CSSProperties,
+  useContext,
+  useRef,
+  forwardRef,
+  useImperativeHandle,
+} from 'react';
 
-type PageProps = {
+const context = React.createContext<any>({});
+
+type PageProps = React.PropsWithChildren<{
   /** 是否为 tabview */
   tabView?: boolean;
   style?: CSSProperties;
-};
+}>;
 
-function Page({
-  tabView,
-  style = {},
-  children,
-}: React.PropsWithChildren<PageProps>) {
-  return (
-    <View
-      style={{
-        height: '100vh',
-        paddingBottom: tabView ? '88px' : 0,
-        boxSizing: 'border-box',
-        ...style,
-      }}
-    >
-      <ScrollView
-        enhanced
-        scrollY
+type FixedNodeMap = {};
+
+const Page = forwardRef(
+  (
+    { tabView, style = {}, children }: PageProps,
+    ref: React.Ref<PageRef> | undefined
+  ) => {
+    const forceUpdate = useForceUpdate();
+    const { bottom } = useConstant(() => {
+      const { safeArea, screenHeight } = Taro.getSystemInfoSync();
+      return {
+        top: safeArea!.top,
+        bottom: screenHeight - safeArea!.bottom,
+      };
+    });
+
+    useImperativeHandle(ref, () => {
+      return {
+        fixedViewRender,
+      };
+    });
+
+    const fixedNodeMap = useRef<FixedNodeMap>({});
+
+    /**
+     * ScrollView组件开启下拉刷新时，fixed 定位会有问题，所以为了这种情况我在 Page 层级 添加了一个 fixed-view
+     * 页面下方的组件可以在每次更新时 调用 fixedViewRender 更新 modal 组件
+     * updateNodes 一个以 key 存放节点的 map 每次会更新
+     *
+     * 同级使用 ref
+     * 后代使用 useFixedViewRender 走 context
+     */
+    function fixedViewRender(updateNodes: FixedNodeMap): null {
+      // 更新节点
+      fixedNodeMap.current = Object.assign(fixedNodeMap.current, updateNodes);
+      // forceUpdate  因为 node 值不是 state 手动刷新 Page 组件
+      forceUpdate();
+      return null;
+    }
+
+    return (
+      <View
         className="tt-page"
-        style={{ height: '100%' }}
+        style={{
+          height: '100vh',
+          paddingBottom: tabView ? `calc(135rpx + ${bottom}px)` : bottom + 'px',
+          boxSizing: 'border-box',
+          ...style,
+        }}
       >
-        {children}
-      </ScrollView>
-    </View>
-  );
+        <context.Provider
+          value={{
+            fixedViewRender,
+          }}
+        >
+          {children}
+        </context.Provider>
+        <View className="tt-fixed-view" style={{ height: 0, width: 0 }}>
+          {Object.values(fixedNodeMap.current)}
+        </View>
+      </View>
+    );
+  }
+);
+
+export function useFixedViewRender() {
+  const { fixedViewRender } = useContext(context);
+  const fn =
+    fixedViewRender ||
+    function () {
+      return null;
+    };
+  return fn;
 }
 
-export default wrapTrackingPage(Page);
+export interface PageRef {
+  fixedViewRender(updateNodes: FixedNodeMap): null;
+}
+
+const WrapTrackingPage = wrapTrackingPage(Page);
+
+export default WrapTrackingPage;
