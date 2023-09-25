@@ -1,15 +1,16 @@
 import { throttle } from '@/utils/delay';
 import { useDidHide, useDidShow, useLoad, useUnload } from '@tarojs/taro';
-import agent from './index';
+import TA from './index';
 import * as PageHistory from './tool/LinkNode';
 
 type ExpandProps = {
+  page?: React.Ref<any>;
   pageId: string;
   extension?: Record<string, any>;
 };
 
 const wrapTrackingPage: HOC_Expand<ExpandProps> = (Component: any) => {
-  return function (props: any) {
+  return function ({ page, ...props }: any) {
     const pageId = props.pageId;
     const tabView = props.tabView;
 
@@ -23,29 +24,32 @@ const wrapTrackingPage: HOC_Expand<ExpandProps> = (Component: any) => {
     });
 
     useUnload(() => {
+      TA.duration.groups['pageStay'].end(props.extension);
       PageHistory.pop();
     });
 
     useDidHide(() => {
-      agent.duration.groups['pageStay'].end(props.extension);
+      TA.duration.groups['pageStay'].end(props.extension);
     });
 
     useDidShow(() => {
+      console.log('page show');
       if (tabView) {
         tabIn(pageId);
       }
 
-      agent.track({
-        event: 'show',
-        pageId: pageId,
+      TA.track({
+        event: 'load',
+        pageid: pageId,
       });
-      agent.duration.groups['pageStay'].start({
-        event: 'stay',
-        pageId: pageId,
+
+      TA.duration.groups['pageStay'].start({
+        event: 'show',
+        pageid: pageId,
       });
     });
 
-    return <Component {...props} />;
+    return <Component ref={page} {...props} />;
   };
 };
 
@@ -57,7 +61,7 @@ const tabIn = throttle((pageId: string) => {
   }
 }, 20);
 
-(window as any).wx.test = function () {
+(window as any).wx.getCurr = function () {
   console.log(PageHistory.Stack.curr);
 };
 

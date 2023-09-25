@@ -1,4 +1,4 @@
-import useConstant from '@/hooks/useConstants';
+import useConstant from '@/hooks/useConstant';
 import { View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import { AtIcon } from 'taro-ui';

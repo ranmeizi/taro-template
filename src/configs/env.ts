@@ -14,13 +14,13 @@ export type EnvConfig = Record<Envs, ConfigList>;
 
 const config: EnvConfig = {
   test: {
-    server_base: 'http://assistant-api.yitao.mofanglicai.com.cn/'
+    server_base: 'http://test/'
   },
   pre: {
-    server_base: 'https://assistant-api-kp1.licaimofang.com/'
+    server_base: 'https://pre/'
   },
   prod: {
-    server_base: 'https://assistant-api.licaimofang.com/'
+    server_base: 'https://prod/'
   }
 };
 

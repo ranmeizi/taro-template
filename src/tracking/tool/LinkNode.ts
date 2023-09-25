@@ -34,7 +34,6 @@ export function push(val: string): boolean {
     const node = new LinkNode(val)
     node.prev = Stack.curr
     Stack.curr = node
-    console.log(Stack.curr)
     return true
 }
 

@@ -1,41 +1,39 @@
-import { TrackingTrait } from './abstract'
+import { TrackingTrait } from './abstract';
 
-type Data = any
+type Data = any;
 
-type SetDurationFn = (data: Data, duration: number) => Data
+type SetDurationFn = (data: Data, duration: number) => Data;
 
 type DurationOptions = {
-    track: TrackingTrait['track']
-    setDuration?: SetDurationFn
-}
+  track: TrackingTrait['track'];
+  setDuration?: SetDurationFn;
+};
 
 type GroupOptions = {
-    name: string
-    track: TrackingTrait['track']
-    setDuration?: SetDurationFn
-}
-
+  name: string;
+  track: TrackingTrait['track'];
+  setDuration?: SetDurationFn;
+};
 
 export class Duration {
+  options;
 
-    options
+  constructor(options: DurationOptions) {
+    this.options = options;
+  }
 
-    constructor(options: DurationOptions) {
-        this.options = options
+  groups: Record<string, Group> = {};
+
+  createGroup(name: string) {
+    if (name in this.groups) {
+      throw new Error('Duration.createGroup: name is existed');
     }
 
-    groups: Record<string, Group> = {}
-
-    createGroup(name: string) {
-        if (name in this.groups) {
-            throw new Error('Duration.createGroup: name is existed')
-        }
-
-        this.groups[name] = new Group({
-            name,
-            track: this.options.track
-        })
-    }
+    this.groups[name] = new Group({
+      name,
+      track: this.options.track,
+    });
+  }
 }
 
 /**
@@ -43,72 +41,74 @@ export class Duration {
  * 不过也可以手动调用 end 结束事件
  */
 class Group {
-    options
+  options;
 
-    data: any = {}
+  data: any = {};
 
-    startTime?: number = undefined
+  startTime?: number = undefined;
 
-    constructor(options: GroupOptions) {
-        this.options = options
+  constructor(options: GroupOptions) {
+    this.options = options;
+  }
+
+  private clear() {
+    this.data = {};
+    this.startTime = undefined;
+  }
+
+  setData(data?: any) {
+    if (data && typeof data === 'object') {
+      Object.assign(this.data, data);
+    }
+  }
+
+  start(data: any) {
+    if (this.startTime) {
+      this.end();
     }
 
-    private clear() {
-        this.data = {}
-        this.startTime = undefined
+    this.startTime = Date.now();
+
+    // 更新data
+    data && this.setData(data);
+  }
+
+  end(data?: any) {
+    if (!this.startTime) {
+      // 无效调用
+      return;
+    }
+    // 更新dat
+    data &&
+      this.setData({
+        ...this.data,
+        ...data,
+      });
+
+    const duration = Date.now() - this.startTime;
+
+    // 设置duration
+    if (this.setDuration) {
+      this.setData(this.setDuration(this.data, duration));
+    } else {
+      this.setData({ ...this.data, duration });
     }
 
-    setData(data?: any) {
-        if (data && typeof data === 'object') {
-            Object.assign(this.data, data)
-        }
-    }
+    // 发送
+    this.track({
+      ...this.data,
+      staytime: duration,
+    });
 
-    start(data: any) {
-        console.log('start')
-        if (this.startTime) {
-            this.end()
-        }
+    // 清除
+    this.clear();
+  }
 
-        this.startTime = Date.now()
+  get track() {
+    return this.options.track;
+  }
 
-        // 更新data
-        data && this.setData(data)
-    }
-
-    end(data?: any) {
-        console.log('end')
-        if (!this.startTime) {
-            // 无效调用
-            return
-        }
-        // 更新dat
-        data && this.setData({
-            ...this.data,
-            ...data
-        })
-
-        const duration = Date.now() - this.startTime
-
-        // 设置duration
-        if (this.setDuration) {
-            this.setData(this.setDuration(this.data, duration))
-        } else {
-            this.setData({ ...this.data, duration })
-        }
-
-        // 发送
-        this.track(this.data)
-
-        // 清除
-        this.clear()
-    }
-
-    get track() {
-        return this.options.track
-    }
-
-    get setDuration() {
-        return this.options.setDuration
-    }
+  get setDuration() {
+    return this.options.setDuration;
+  }
 }

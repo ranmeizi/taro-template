@@ -1,34 +1,31 @@
-import { TrackingTrait } from './abstract'
-import { Duration } from './duration'
+import { TrackingTrait } from './abstract';
+import { Duration } from './duration';
 
-type TrackAdaptor = () => TrackingTrait
+type TrackAdaptor = () => TrackingTrait;
 
-class Agent {
-    controllers: TrackingTrait[] = []
+export class Agent<T = any> {
+  controllers: TrackingTrait<T>[] = [];
 
-    use(impl: TrackAdaptor) {
-        this.controllers.push(impl())
-    }
+  use(impl: TrackAdaptor) {
+    this.controllers.push(impl());
+  }
 
-    initialize = applyFn<TrackingTrait['initialize']>('initialize').bind(this)
-    track = applyFn<TrackingTrait['track']>('track').bind(this)
-    setGlobal = applyFn<TrackingTrait['setGlobal']>('setGlobal').bind(this)
-    setAccount = applyFn<TrackingTrait['setAccount']>('setAccount').bind(this)
+  initialize: TrackingTrait<T>['initialize'] = applyFn('initialize').bind(this);
+  track: TrackingTrait<T>['track'] = applyFn('track').bind(this);
+  setGlobal: TrackingTrait<T>['setGlobal'] = applyFn('setGlobal').bind(this);
+  setAccount: TrackingTrait<T>['setAccount'] = applyFn('setAccount').bind(this);
 
-    duration = new Duration({
-        track: this.track
-    })
+  duration = new Duration({
+    track: this.track,
+  });
 }
 
-function applyFn<T>(name: keyof TrackingTrait): T {
-    return function (this: Agent) {
-        this.controllers.forEach(controller => {
-            if (typeof controller[name] === 'function') {
-                controller[name].apply(controller, arguments as any)
-            }
-        })
-    } as T
+function applyFn(name: keyof TrackingTrait) {
+  return function (this: Agent) {
+    this.controllers.forEach((controller) => {
+      if (typeof controller[name] === 'function') {
+        controller[name].apply(controller, arguments as any);
+      }
+    });
+  };
 }
-
-export default new Agent()
-

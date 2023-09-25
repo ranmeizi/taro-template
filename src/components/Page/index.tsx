@@ -1,4 +1,4 @@
-import useConstant from '@/hooks/useConstants';
+import useConstant from '@/hooks/useConstant';
 import useForceUpdate from '@/hooks/useForceUpdate';
 import wrapTrackingPage from '@/tracking/page.wrapper';
 import { View } from '@tarojs/components';
