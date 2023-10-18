@@ -10,6 +10,10 @@ type MenuLayoutProps = {
   debug?: boolean;
 };
 
+/** 这俩单位都是px */
+const deviceInfo = Taro.getSystemInfoSync();
+const menuRect = Taro.getMenuButtonBoundingClientRect();
+
 /**
  * 在这里将头部切分为3个部分
  * 1. 状态栏 height:statusHeiht top:0
@@ -19,25 +23,22 @@ type MenuLayoutProps = {
  * 3. 其余部分 1，2以外的节点
  */
 export class MenuLayout extends PureComponent<MenuLayoutProps> {
-  /** 这俩单位都是px */
-  deviceInfo = Taro.getSystemInfoSync();
-  menuRect = Taro.getMenuButtonBoundingClientRect();
-
   componentDidMount(): void {
-    console.log(this.deviceInfo, this.menuRect);
+    console.log(deviceInfo, menuRect);
   }
 
   get statusStyle(): React.CSSProperties {
+    console.log('statusStyle', deviceInfo.statusBarHeight);
     return {
       background: this.props.debug ? 'blue' : '',
-      height: this.deviceInfo.statusBarHeight + 'px',
+      height: deviceInfo.statusBarHeight + 'px',
     };
   }
 
   get menuStyle(): React.CSSProperties {
-    const mg = this.menuRect.top - this.deviceInfo.statusBarHeight!;
-    const height = mg * 2 + this.menuRect.height;
-    const width = this.menuRect.left;
+    const mg = menuRect.top - deviceInfo.statusBarHeight!;
+    const height = mg * 2 + menuRect.height;
+    const width = menuRect.left;
     return {
       background: this.props.debug ? 'red' : '',
       height: height + 'px',
@@ -57,4 +58,16 @@ export class MenuLayout extends PureComponent<MenuLayoutProps> {
       </View>
     );
   }
+}
+
+let memoHeight;
+
+export function getHeight() {
+  if (memoHeight) {
+    return memoHeight;
+  }
+  const mg = menuRect.top - deviceInfo.statusBarHeight!;
+  memoHeight = deviceInfo.statusBarHeight! + mg * 2 + menuRect.height;
+
+  return memoHeight;
 }

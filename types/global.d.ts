@@ -13,15 +13,20 @@ declare module '*.styl';
 
 declare namespace NodeJS {
   interface ProcessEnv {
-    TARO_ENV: 'weapp' | 'swan' | 'alipay' | 'h5' | 'rn' | 'tt' | 'quickapp' | 'qq' | 'jd'
+    TARO_ENV:
+      | 'weapp'
+      | 'swan'
+      | 'alipay'
+      | 'h5'
+      | 'rn'
+      | 'tt'
+      | 'quickapp'
+      | 'qq'
+      | 'jd';
   }
 }
 
 type LinkNode = {
-  val: string
-  prev: LinkNode | null
-}
-
-interface Taro {
-  curr: LinkNode | null
-}
+  val: string;
+  prev: LinkNode | null;
+};

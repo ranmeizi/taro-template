@@ -10,11 +10,10 @@ let globalData = {};
 export default class extends TrackingTrait<TrackingProperties> {
   initialize(): void {
     uma.init({
-      // 非正式版本提交数据到"基金理财助手小程序(开发) 645b6b6aba6a5259c44e0883 "上
       appKey: config.umAppkey,
       useOpenid: false,
       autoGetOpenid: true,
-      debug: false, //  process.env.NODE_ENV === "production" ? false : true,
+      debug: false,
       uploadUserInfo: true,
       enableVerify: false,
     });

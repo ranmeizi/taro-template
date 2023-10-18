@@ -1,3 +1,4 @@
+import { context as AppContext } from '@/contexts/AppPersist';
 import useConstant from '@/hooks/useConstant';
 import useForceUpdate from '@/hooks/useForceUpdate';
 import wrapTrackingPage from '@/tracking/page.wrapper';
@@ -5,15 +6,25 @@ import { View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import React, {
   CSSProperties,
-  useContext,
-  useRef,
   forwardRef,
+  useContext,
   useImperativeHandle,
+  useRef,
 } from 'react';
+import LoginModal, { LoginModalRef, OpenOptions } from './LoginModal';
 
-const context = React.createContext<any>({});
+export const context = React.createContext<{
+  fixedViewRender: (node: FixedNodeMap) => null;
+  checkLogin: (fn?: () => any) => any;
+}>({
+  fixedViewRender() {
+    return null;
+  },
+  checkLogin: () => undefined,
+});
 
 type PageProps = React.PropsWithChildren<{
+  className?: string;
   /** 是否为 tabview */
   tabView?: boolean;
   style?: CSSProperties;
@@ -23,10 +34,17 @@ type FixedNodeMap = {};
 
 const Page = forwardRef(
   (
-    { tabView, style = {}, children }: PageProps,
+    { tabView, style = {}, className, children }: PageProps,
     ref: React.Ref<PageRef> | undefined
   ) => {
     const forceUpdate = useForceUpdate();
+
+    // 用户信息
+    const { token } = useContext(AppContext);
+
+    // 隐私控制器
+    const loginModalContrl = useRef<LoginModalRef>(null);
+
     const { bottom } = useConstant(() => {
       const { safeArea, screenHeight } = Taro.getSystemInfoSync();
       return {
@@ -38,6 +56,7 @@ const Page = forwardRef(
     useImperativeHandle(ref, () => {
       return {
         fixedViewRender,
+        checkLogin,
       };
     });
 
@@ -59,19 +78,36 @@ const Page = forwardRef(
       return null;
     }
 
+    /** 登陆弹窗打开 */
+    function openLoginModal({ success }: OpenOptions) {
+      loginModalContrl.current?.open({
+        success: success,
+      });
+    }
+
+    /** 检查登陆 */
+    function checkLogin(successFn) {
+      return token
+        ? successFn && successFn()
+        : openLoginModal({ success: successFn });
+    }
+
     return (
       <View
-        className="tt-page"
+        className={`tt-page${className ? ' ' + className : ''}`}
+        catchMove
         style={{
           height: '100vh',
-          paddingBottom: tabView ? `calc(135rpx + ${bottom}px)` : bottom + 'px',
+          paddingBottom: tabView ? `calc(135rpx + ${bottom}px)` : 0,
           boxSizing: 'border-box',
           ...style,
         }}
       >
+        <LoginModal ref={loginModalContrl} />
         <context.Provider
           value={{
             fixedViewRender,
+            checkLogin,
           }}
         >
           {children}
@@ -94,8 +130,16 @@ export function useFixedViewRender() {
   return fn;
 }
 
+/** 拦截登陆 */
+export function useCheckLogin() {
+  const { checkLogin } = useContext(context);
+
+  return checkLogin;
+}
+
 export interface PageRef {
   fixedViewRender(updateNodes: FixedNodeMap): null;
+  checkLogin(fn?: () => any): any;
 }
 
 const WrapTrackingPage = wrapTrackingPage(Page);
