@@ -19,18 +19,13 @@ const examples = [
     path: '/subPackage/pages/example/pulldown/deep-refresher',
   },
   {
-    title: '虚拟列表',
-    desc: 'taro VirtualList',
-    path: '/subPackage/pages/example/virtuallist/index',
-  },
-  {
     title: '虚拟列表+下拉刷新',
     desc: '虚拟列表+下拉刷新',
     path: '/subPackage/pages/example/virtuallist/with-pulldown',
   },
   {
     title: '虚拟列表+下拉刷新+swiper',
-    desc: '虚拟列表+下拉刷新+swiper',
+    desc: '虚拟列表+下拉刷新+swiper 顺便再加个骨架吧',
     path: '/subPackage/pages/example/virtuallist/with-pulldown-swiper',
   },
 ];

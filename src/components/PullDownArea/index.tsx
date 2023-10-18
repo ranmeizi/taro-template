@@ -76,7 +76,7 @@ type Props = {
   pullToRefreshFn: () => Promise<any>;
 };
 
-export default class PullDown extends React.Component<
+export default class PullDownArea extends React.Component<
   PropsWithChildren<Props>
 > {
   timer: any = null;

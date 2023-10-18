@@ -8,7 +8,6 @@ export default defineAppConfig({
         'pages/example/index', // 示例列表
         'pages/example/pulldown/index', // 下拉刷新 view
         'pages/example/pulldown/deep-refresher', // 下拉组件的深层隔代组件刷新
-        'pages/example/virtuallist/index', // 虚拟列表
         'pages/example/virtuallist/with-pulldown', // 虚拟列表+pulldown
         'pages/example/virtuallist/with-pulldown-swiper', // 虚拟列表+pulldown+swiper
       ],
