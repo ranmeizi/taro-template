@@ -9,6 +9,26 @@ const PAGE_ID = 'example';
 
 const examples = [
   {
+    title: 'MenuLayout',
+    desc: '自定义头部时，使用 MenuLayout 占位',
+    path: '/subPackage/pages/example/customheader-menu-layout/index',
+  },
+  {
+    title: '滚动显示头部',
+    desc: '监听滚动一定高度时，显示头部',
+    path: '/subPackage/pages/example/customheader-menu-layout/show-header',
+  },
+  {
+    title: 'useModal',
+    desc: '命令式弹窗',
+    path: '/subPackage/pages/example/modal/index',
+  },
+  {
+    title: '修复taroui弹窗',
+    desc: 'taroui在scroll时弹窗mask有点问题，使用page弹在page里修复一下',
+    path: '/subPackage/pages/example/modal/scroll-fix',
+  },
+  {
     title: '下拉刷新',
     desc: '一个监听 move down 的 container',
     path: '/subPackage/pages/example/pulldown/index',
