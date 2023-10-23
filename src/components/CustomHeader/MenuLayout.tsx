@@ -17,9 +17,7 @@ const menuRect = Taro.getMenuButtonBoundingClientRect();
 /**
  * 在这里将头部切分为3个部分
  * 1. 状态栏 height:statusHeiht top:0
- * 2. 状态栏底部，到胶囊按钮底部加上外边距
- *    外边距 mg = menu.top - statusHeiht
- *    height = 2 * mg + menuHeight
+ * 2. header 44px
  * 3. 其余部分 1，2以外的节点
  */
 export class MenuLayout extends PureComponent<MenuLayoutProps> {
@@ -28,7 +26,6 @@ export class MenuLayout extends PureComponent<MenuLayoutProps> {
   }
 
   get statusStyle(): React.CSSProperties {
-    console.log('statusStyle', deviceInfo.statusBarHeight);
     return {
       background: this.props.debug ? 'blue' : '',
       height: deviceInfo.statusBarHeight + 'px',
@@ -36,8 +33,7 @@ export class MenuLayout extends PureComponent<MenuLayoutProps> {
   }
 
   get menuStyle(): React.CSSProperties {
-    const mg = menuRect.top - deviceInfo.statusBarHeight!;
-    const height = mg * 2 + menuRect.height;
+    const height = 44;
     const width = menuRect.left;
     return {
       background: this.props.debug ? 'red' : '',
@@ -66,8 +62,7 @@ export function getHeight() {
   if (memoHeight) {
     return memoHeight;
   }
-  const mg = menuRect.top - deviceInfo.statusBarHeight!;
-  memoHeight = deviceInfo.statusBarHeight! + mg * 2 + menuRect.height;
+  memoHeight = deviceInfo.statusBarHeight! + 44;
 
   return memoHeight;
 }
