@@ -33,7 +33,7 @@ export class MenuLayout extends PureComponent<MenuLayoutProps> {
   }
 
   get menuStyle(): React.CSSProperties {
-    const height = 44;
+    const height = 44 + 4;
     const width = menuRect.left;
     return {
       background: this.props.debug ? 'red' : '',
@@ -62,7 +62,7 @@ export function getHeight() {
   if (memoHeight) {
     return memoHeight;
   }
-  memoHeight = deviceInfo.statusBarHeight! + 44;
+  memoHeight = deviceInfo.statusBarHeight! + 44 + 4;
 
   return memoHeight;
 }
