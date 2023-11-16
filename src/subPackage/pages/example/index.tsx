@@ -24,11 +24,6 @@ const examples = [
     path: '/subPackage/pages/example/modal/index',
   },
   {
-    title: '修复taroui弹窗',
-    desc: 'taroui在scroll时弹窗mask有点问题，使用page弹在page里修复一下',
-    path: '/subPackage/pages/example/modal/scroll-fix',
-  },
-  {
     title: '下拉刷新',
     desc: '一个监听 move down 的 container',
     path: '/subPackage/pages/example/pulldown/index',
