@@ -30,3 +30,21 @@ type LinkNode = {
   val: string;
   prev: LinkNode | null;
 };
+
+// 表单类型
+interface FieldInputProps<T> {
+  name: string;
+  onBlur: (event?: any) => void;
+  onChange: (event: any) => void;
+  onFocus: (event?: any) => void;
+  type?: string;
+  value: T;
+  checked?: boolean;
+  multiple?: boolean;
+}
+
+/** 约束表单项 */
+interface IConstraintFormItem<T = any> extends FieldInputProps<T> {
+  /** 错误信息 */
+  error?: Record<string, any>;
+}
