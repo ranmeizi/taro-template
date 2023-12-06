@@ -13,6 +13,7 @@ export default defineAppConfig({
         'pages/example/customheader-menu-layout/index', // MenuLayout
         'pages/example/customheader-menu-layout/show-header', // 滚动显示头部
         'pages/example/modal/index', // 命令式弹窗
+        'pages/example/resize-canvas/index', // 图片压缩
       ],
     },
   ],

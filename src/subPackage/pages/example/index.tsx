@@ -43,6 +43,11 @@ const examples = [
     desc: '虚拟列表+下拉刷新+swiper 顺便再加个骨架吧',
     path: '/subPackage/pages/example/virtuallist/with-pulldown-swiper',
   },
+  {
+    title: '图片压缩',
+    desc: '使用canvas进行图片压缩',
+    path: '/subPackage/pages/example/resize-canvas/index',
+  },
 ];
 
 definePageConfig({
