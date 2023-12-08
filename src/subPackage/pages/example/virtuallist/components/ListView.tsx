@@ -1,4 +1,4 @@
-import { PromiseArea } from '@/components/PromiseArea';
+import { Await } from '@/components/Await';
 import PullDownArea from '@/components/PullDownArea';
 import { calc } from '@/components/VirtualList/calcHeight';
 import { useCheckReachTop } from '@/components/VirtualList/useCheckReachTop';
@@ -93,7 +93,7 @@ export default function ListView() {
       className="full-height virtual-list"
       pullToRefreshFn={refresh}
     >
-      <PromiseArea action={action} pendingView={<SkeletonView></SkeletonView>}>
+      <Await resolve={action} fallback={<SkeletonView></SkeletonView>}>
         {rect?.height && (
           <VirtualList
             overscanCount={10}
@@ -138,7 +138,7 @@ export default function ListView() {
             }}
           />
         )}
-      </PromiseArea>
+      </Await>
     </PullDownArea>
   );
 }
