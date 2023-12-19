@@ -19,7 +19,7 @@
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.codeActionsOnSave": {
-            "source.fixAll.stylelint": true
+            "source.fixAll.stylelint": "explicit"
         }
     },
     "[json]": {
@@ -29,5 +29,10 @@
         "editor.suggest.insertMode": "replace",
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true
+    },
+    "[typescript][typescriptreact]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        }
     },
 }
